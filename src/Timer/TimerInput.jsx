@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import style from "./Timer.module.css";
 
 const TimerInput = ({time, onSetTime}) => {
-    
+
+    const updateTime = (e) => {
+        if ( Number.isNaN(Number(e.target.value)) ) return;
+        onSetTime(e.target.value)
+    }
+
+
     return (
         <div className={style.inpBox}>
             <input
@@ -10,7 +16,7 @@ const TimerInput = ({time, onSetTime}) => {
                 type="text" 
                 value={time}
                 placeholder="00"
-                onChange={(e)=>onSetTime(e.target.value)}
+                onChange={updateTime}
             />
         </div>
     )

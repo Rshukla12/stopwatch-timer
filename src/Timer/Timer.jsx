@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import TimerInput from "./TimerInput";
 import style from "./Timer.module.css";
 
@@ -39,21 +39,21 @@ const Timer = () => {
             <div className={style.btns}>
                 { isActive ? ( 
                     <button 
-                        className={style.stop}
+                        className={time ? style.stop : style.btn}
                         onClick={stopTimer}
                     >
                         Stop
                     </button> 
                 ) : (
                     <button 
-                        className={style.start}
+                        className={time ? style.start : style.btn}
                         onClick={startTimer}
                     >
                         Start
                     </button>  
                 ) }
                 <button 
-                    className={style.reset}
+                    className={time ? style.reset : style.btn}
                     onClick={resetTimer}
                 >
                     Reset
