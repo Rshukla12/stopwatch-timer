@@ -1,0 +1,49 @@
+/* Main */
+.main {
+    background-color: black;
+    width: 50%;
+    margin: auto;
+}
+.btns {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 1rem 5rem;
+}
+
+.reset,
+.start{
+    padding: 0.25rem 2rem;
+    font-size: 1rem;
+    color: gray;
+    background: black;
+}
+.reset {
+    background: #d3d3d3;
+    color: black;
+}
+.start {
+    color: black;
+    background: rgba(85, 85, 192, 0.842);
+}
+
+/* Input */
+.inpBox {
+    width: 90%;
+    max-width: 22rem;
+    margin: auto;
+    height: 6rem;
+    background-color: black;
+    color: white;
+}
+.inp{
+    width: 20rem;
+    height: 1.77rem;
+    font-size: 4rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 4px solid #4285F4;
+    padding: 1.65rem 0.5rem;
+}
