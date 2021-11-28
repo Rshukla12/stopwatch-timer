@@ -12,9 +12,8 @@ const Timer = () => {
         setIsActive(true);
         refTimer.current = setInterval(()=> {
             setTime( prev => {
-                if ( prev === 1 ) {
-                    clearInterval(refTimer.current);
-                    setIsActive(true);
+                if ( prev <= 1 ) {
+                    stopTimer();
                 }
                 return prev-1;
             });
