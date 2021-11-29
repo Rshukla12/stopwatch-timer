@@ -2,14 +2,16 @@
 .main {
     background-color: #202124;
     width: 50%;
-    margin: auto;
+    margin: 0.5rem auto;
 }
 .btns {
     display: flex;
-    width: 30%;
+    width: 60%;
+    max-width: 30rem;
     justify-content: space-evenly;
-    margin: 0rem 11rem;
-    padding: 1rem 2rem;
+    margin: 0rem auto;
+    margin-left: -2%;
+    padding: 0.5rem 2rem 1rem;
 }
 
 .btn,
@@ -29,7 +31,9 @@
     color: black;
     background: rgba(85, 85, 192, 0.842);
 }
-
+.reset, .start, .stop {
+    cursor: pointer;
+}
 /* Input */
 .inpBox {
     width: 90%;
@@ -39,14 +43,15 @@
     color: white;
 }
 .inp{
-    width: 20rem;
+    width: 90%;
+    max-width: 20rem;
     height: 1.77rem;
     font-size: 4rem;
     background-color: #202124;
     color: white;
     border: none;
     border-bottom: 4px solid #4285F4;
-    padding: 1.65rem 0.5rem;
+    padding: 2rem 0.5rem 1.25rem;
 }
 .inp:focus {
     outline: 0;

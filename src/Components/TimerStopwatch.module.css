@@ -1,0 +1,24 @@
+.main {
+    background-color: #212121;
+    width: 50%;
+    max-width: 50rem;
+    height: 14rem;
+    margin: auto;
+    border: 1px solid gray;
+}
+.btns {
+    display: flex;
+    width: 100%;
+}
+.btn, .activeBtn {
+    width: 50%;
+    padding: 1rem 0rem;
+    text-align: center;
+    color: #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    cursor: pointer;
+}
+.activeBtn {
+    color: rgba(85, 85, 192, 0.842);
+    border-bottom: 1px solid rgba(85, 85, 192, 0.842);
+}

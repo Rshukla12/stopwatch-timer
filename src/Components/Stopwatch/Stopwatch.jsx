@@ -1,10 +1,12 @@
 import React, { useRef, useState } from "react";
 import style from "./Stopwatch.module.css";
 
-const Stopwatch = () => {
+const Stopwatch = ({isVisible}) => {
     const [time, setTime] = useState(0);
     const [isActive, setIsActive] = useState(false);
     const refTimer = useRef(null);
+
+    if ( !isVisible ) return null;
     
     const startTimer = () => {
         if ( refTimer.current ) return;

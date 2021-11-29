@@ -6,9 +6,11 @@
 }
 .btns {
     display: flex;
-    width: 30%;
+    width: 60%;
+    max-width: 30rem;
     justify-content: space-evenly;
-    margin: 0rem 11rem;
+    margin: 0rem auto;
+    margin-left: -2%;
     padding: 1rem 2rem;
 }
 
@@ -30,6 +32,10 @@
     background: rgba(85, 85, 192, 0.842);
 }
 
+.reset, .start, .stop {
+    cursor: pointer;
+}
+
 /* Time */
 .time {
     width: 90%;
@@ -37,12 +43,11 @@
     gap: 1rem;
     justify-content: start;
     max-width: 20rem;
-    margin: 1rem auto 1.5rem;
-    height: 5rem;
+    margin: 0rem auto 1.5rem;
+    height: 3rem;
     padding: 0.5rem 1rem;
     color: white;
     text-align: left;
-    border-bottom: 4px solid #4285F4;
 }
 .secs {
     height: 4rem;

@@ -1,12 +1,10 @@
 import './App.css';
-import Stopwatch from './Stopwatch/Stopwatch';
-import Timer from './Timer/Timer';
+import TimerStopwatch from './Components/TimerStopwatch';
 
 function App() {
   return (
     <div className="App">
-      <Timer />
-      <Stopwatch />
+      <TimerStopwatch />
     </div>
   );
 }
